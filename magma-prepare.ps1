@@ -1,4 +1,6 @@
-Function magma-prepare {
+param([string[]]$Path,[string[]]$Study,[string[]]$Samplesheet)
+
+function magma-prepare {
   <#
     .SYNOPSIS
     .DESCRIPTION
@@ -55,3 +57,6 @@ param(
  }
 
 }
+
+
+magma-prepare -path $Path -Study $Study  -Samplesheet $samplesheet
